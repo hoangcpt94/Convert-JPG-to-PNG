@@ -29,7 +29,7 @@ def create_custom_hn(links, subtext):
 		href = item.get('href', None)
 		vote = subtext[idx].select('.score')
 		# After print vote, we see vote is a list with 1 element, not a tag
-		# To use medthod get_text. we get the first element in the vote
+		# To use method get_text. we get the first element in the vote
 		if vote:
 			points = int(vote[0].get_text().split(' ')[0])
 			if points >99:
